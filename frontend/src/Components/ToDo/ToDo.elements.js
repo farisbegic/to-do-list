@@ -14,6 +14,7 @@ export const ToDoBox = styled.div`
     width: 460px;
     background: #F8F9FA;
     border-radius: 16px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 `;
 
 export const HeadingWrapper = styled.div`
@@ -66,7 +67,6 @@ export const Task = styled.div`
     align-items: center;
     width: 420px;
     background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
     border-radius: 16px;
     margin: 5px 0;
     padding: 10px 27px;
@@ -82,3 +82,14 @@ export const TaskText = styled.p`
 `;
 
 export const TaskCheck = styled.input``;
+
+export const ToDoInput = styled.input`
+    width: 100%;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    outline: none;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    color: rgba(0,0,0,0.7);
+`;

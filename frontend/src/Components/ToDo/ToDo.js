@@ -1,6 +1,5 @@
 import React from 'react';
-import { Section, ToDoBox, HeadingWrapper, HeadingSection, Heading, Description, ToDos, Task, TaskText, TaskCheck } from "./ToDo.elements";
-import { Scrollbars } from "react-custom-scrollbars";
+import { Section, ToDoBox, HeadingWrapper, HeadingSection, Heading, Description, ToDos, Task, TaskText, TaskCheck, ToDoInput } from "./ToDo.elements";
 
 const ToDo = () => {
     const today = new Date();
@@ -21,6 +20,7 @@ const ToDo = () => {
                             <TaskCheck type="checkbox"/>
                         </Task>
                     </ToDos>
+                    <ToDoInput />
                 </ToDoBox>
             </Section>
         </>
