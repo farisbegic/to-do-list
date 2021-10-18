@@ -10,3 +10,15 @@ C:\Users\begicfa\Desktop\ToDoList\backend\ToDoList\ToDoList.Domain\obj\Debug\net
 C:\Users\begicfa\Desktop\ToDoList\backend\ToDoList\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.dll
 C:\Users\begicfa\Desktop\ToDoList\backend\ToDoList\ToDoList.Domain\obj\Debug\net5.0\ref\ToDoList.Domain.dll
 C:\Users\begicfa\Desktop\ToDoList\backend\ToDoList\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.pdb
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\bin\Debug\net5.0\ToDoList.Domain.deps.json
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\bin\Debug\net5.0\ToDoList.Domain.dll
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\bin\Debug\net5.0\ref\ToDoList.Domain.dll
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\bin\Debug\net5.0\ToDoList.Domain.pdb
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.csproj.AssemblyReference.cache
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.AssemblyInfoInputs.cache
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.AssemblyInfo.cs
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.csproj.CoreCompileInputs.cache
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.dll
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\obj\Debug\net5.0\ref\ToDoList.Domain.dll
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Domain\obj\Debug\net5.0\ToDoList.Domain.pdb

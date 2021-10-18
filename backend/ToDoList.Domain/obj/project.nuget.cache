@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mXHhAZV8fko9IgAa8qXyXzPz4sdPWCglEvJScfkJIwFufnb+l+B384eQxgtP6tgvmyvz8UvFKyuc/kmqW5kgYw==",
+  "dgSpecHash": "7lgJ6mISIz1nEok7kYRKJZVr1A2SEoSrB7hywx+06gtEJllmj0h5Z+b0Nm7Z+geaFKhsO1FAf5Hb61gF/82/Bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\begicfa\\Desktop\\ToDoList\\backend\\ToDoList.Domain\\ToDoList.Domain.csproj",
+  "projectFilePath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Domain\\ToDoList.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

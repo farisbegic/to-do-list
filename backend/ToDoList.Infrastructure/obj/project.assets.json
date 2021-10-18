@@ -5833,19 +5833,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\begicfa\\.nuget\\packages\\": {}
+    "C:\\Users\\fabeg\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\begicfa\\Desktop\\ToDoList\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
       "projectName": "ToDoList.Infrastructure",
-      "projectPath": "C:\\Users\\begicfa\\Desktop\\ToDoList\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\begicfa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\begicfa\\Desktop\\ToDoList\\backend\\ToDoList.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\fabeg\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\begicfa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fabeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5859,11 +5859,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\begicfa\\Desktop\\ToDoList\\backend\\ToDoList.Application\\ToDoList.Application.csproj": {
-              "projectPath": "C:\\Users\\begicfa\\Desktop\\ToDoList\\backend\\ToDoList.Application\\ToDoList.Application.csproj"
+            "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Application\\ToDoList.Application.csproj": {
+              "projectPath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Application\\ToDoList.Application.csproj"
             },
-            "C:\\Users\\begicfa\\Desktop\\ToDoList\\backend\\ToDoList.Domain\\ToDoList.Domain.csproj": {
-              "projectPath": "C:\\Users\\begicfa\\Desktop\\ToDoList\\backend\\ToDoList.Domain\\ToDoList.Domain.csproj"
+            "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Domain\\ToDoList.Domain.csproj": {
+              "projectPath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Domain\\ToDoList.Domain.csproj"
             }
           }
         }
@@ -5914,7 +5914,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
