@@ -83,7 +83,22 @@ export const TaskText = styled.p`
 
 export const TaskCheck = styled.input``;
 
-export const ToDoInput = styled.input`
+export const ToDoSubmitBox = styled.form`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const TaskButtons = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+`;
+
+export const ToDoInput = styled.input.attrs(props => ({
+    type: "text"
+}))`
     width: 100%;
     border: 0;
     background: none;
@@ -92,4 +107,17 @@ export const ToDoInput = styled.input`
     padding: 5px;
     font-family: "Roboto", sans-serif;
     color: rgba(0,0,0,0.7);
+`;
+
+export const ToDoSubmit = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F66568;
+    border: 0;
+    box-shadow: 1px 3px 3px 1px rgba(0,0,0,0.16);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
 `;
