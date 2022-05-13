@@ -16,13 +16,13 @@ namespace ToDoList.Application.Services.Tasks
             _taskRepository = taskRepository;
         }
 
-        public async Task<CreateTaskResponse> CreateAsync(CreateTaskRequest request)
+        public async Task<TaskResponse> CreateAsync(CreateTaskRequest request)
         {
             var task = Domain.Entities.Task.Create(request.Name);
 
             var newTask = await _taskRepository.AddAsync(task);
 
-            var response = CreateTaskResponse.Create(newTask.Id);
+            var response = TaskResponse.Create(newTask.Id, newTask.Name, newTask.IsCompleted, newTask.Date);
 
             return response;
         }

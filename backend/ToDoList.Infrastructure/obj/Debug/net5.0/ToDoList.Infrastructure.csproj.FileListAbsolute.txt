@@ -57,3 +57,4 @@ C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Infrastructure\obj\Debug\net5
 C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Infrastructure\obj\Debug\net5.0\ToDoList.Infrastructure.AssemblyInfo.cs
 C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Infrastructure\obj\Debug\net5.0\ToDoList.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Infrastructure\obj\Debug\net5.0\ToDoList.Infrastructure.genruntimeconfig.cache
+C:\Users\fabeg\Desktop\to-do-list\backend\ToDoList.Infrastructure\obj\Debug\net5.0\ToDoList.Infrastructure.csproj.CopyComplete
