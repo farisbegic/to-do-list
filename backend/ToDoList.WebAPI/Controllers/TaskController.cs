@@ -25,10 +25,10 @@ namespace ToDoList.WebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteAsync([FromRoute] int id)
+        public async Task<ActionResult<DeleteTaskResponse>> DeleteAsync([FromRoute] int id)
         {
-            await _taskService.DeleteAsync(id);
-            return NoContent();
+            var result = await _taskService.DeleteAsync(id);
+            return Ok(result);
         }
 
         [HttpGet]
@@ -46,10 +46,10 @@ namespace ToDoList.WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateAsync([FromRoute] int id, [FromBody] UpdateTaskRequest request)
+        public async Task<ActionResult<TaskResponse>> UpdateAsync([FromRoute] int id, [FromBody] UpdateTaskRequest request)
         {
-            await _taskService.UpdateAsync(id, request);
-            return Ok();
+            var result = await _taskService.UpdateAsync(id, request);
+            return Ok(result);
         }
     }
 }
