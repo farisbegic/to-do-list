@@ -27,7 +27,7 @@ namespace ToDoList.Application.Services.Tasks
             return response;
         }
 
-        public async Task<bool> DeleteAsync(int id)
+        public async Task<DeleteTaskResponse> DeleteAsync(int id)
         {
             var task = await _taskRepository.GetByIdAsync(id);
 
@@ -38,7 +38,9 @@ namespace ToDoList.Application.Services.Tasks
 
             await _taskRepository.DeleteAsync(task);
 
-            return true;
+            var response = DeleteTaskResponse.Create(id);
+
+            return response;
         }
 
         public async Task<IList<TaskResponse>> GetAsync()
@@ -64,7 +66,7 @@ namespace ToDoList.Application.Services.Tasks
             return response;
         }
 
-        public async Task<bool> UpdateAsync(int id, UpdateTaskRequest request)
+        public async Task<TaskResponse> UpdateAsync(int id, UpdateTaskRequest request)
         {
             if (id != request.Id)
             {
@@ -78,11 +80,13 @@ namespace ToDoList.Application.Services.Tasks
                 throw new ArgumentNullException($"Task with {id} does not exist");
             }
 
-            task.Update(request.Name, request.IsCompleted);
+            task.Update(request.IsCompleted);
 
             await _taskRepository.UpdateAsync(task);
 
-            return true;
+            var response = TaskResponse.Create(task.Id, task.Name, task.IsCompleted, task.Date);
+
+            return response;
         }
     }
 }

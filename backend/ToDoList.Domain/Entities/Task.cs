@@ -22,9 +22,8 @@ namespace ToDoList.Domain.Entities
             };
         }
 
-        public void Update(string name, bool isCompleted)
+        public void Update(bool isCompleted)
         {
-            Name = name;
             IsCompleted = isCompleted;
         }
     }
