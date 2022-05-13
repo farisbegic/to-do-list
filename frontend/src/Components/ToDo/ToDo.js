@@ -2,23 +2,24 @@ import React from 'react';
 import { Section, ToDoBox, HeadingWrapper, HeadingSection, Heading, Description, ToDos, Task, TaskText, TaskCheck, ToDoInput, ToDoSubmitBox, TaskButtons } from "./ToDo.elements";
 import { useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import instance from "../../App/todoApi";
+import instance from "../../app/todoApi";
 import { useDispatch } from "react-redux";
-import { addToDo, toggleComplete } from "../../Features/ToDo/toDoSlice";
 import { AiOutlineDelete } from 'react-icons/ai';
+import {addToDo, getToDo} from "../../features/todo/toDoSlice";
 
 const ToDo = () => {
     const [todo, setToDo] = useState("");
+
     const dispatch = useDispatch();
+    const todos = useSelector((state) => state.todos.todos);
+
+    const today = new Date();
+    const date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
 
     // Load all todos
 
     useEffect(() => {
-        instance
-            .get("/task")
-            .then(response => {
-                dispatch(addToDo(response.data))
-            });
+        dispatch(getToDo());
     });
 
     // Update todo
@@ -30,7 +31,6 @@ const ToDo = () => {
             IsCompleted: !todo.isCompleted
         };
         instance.put(`/task/${todo.id}`, updateToDo)
-                .then(response => dispatch(addToDo(todo)))
         window. location. reload()
     }
 
@@ -43,18 +43,12 @@ const ToDo = () => {
 
     const handleSubmit = (input) => {
         input.preventDefault();
-        const requestToDo = { Name: todo };
-        instance.post("/task", requestToDo)
-                .then(response => dispatch(addToDo(todo)))
-                .catch(error => console.log(error))
-        window. location. reload()
+        const newToDo = {
+            Name: todo
+        };
+        dispatch(addToDo(newToDo));
+        setToDo("")
     }
-
-    const today = new Date();
-    const date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
-    const todos = useSelector((state) => state.todos[0]);
-
-    console.log(todos);
 
     return (
         <>

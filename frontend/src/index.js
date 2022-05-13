@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import { store } from './App/store'
-import { Provider } from 'react-redux'
+import {store} from './app/store'
+import {Provider} from 'react-redux'
+import ToDo from "./Components/ToDo/ToDo";
+import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-        <App />
+        <ToDo />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
