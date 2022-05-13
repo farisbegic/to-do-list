@@ -1,11 +1,22 @@
-import React from 'react';
-import { Section, ToDoBox, HeadingWrapper, HeadingSection, Heading, Description, ToDos, Task, TaskText, TaskCheck, ToDoInput, ToDoSubmitBox, TaskButtons } from "./ToDo.elements";
-import { useSelector } from "react-redux";
-import { useEffect, useState } from "react";
-import instance from "../../app/todoApi";
-import { useDispatch } from "react-redux";
-import { AiOutlineDelete } from 'react-icons/ai';
-import {addToDo, getToDo} from "../../features/todo/toDoSlice";
+import React, {useEffect, useState} from 'react';
+import {
+    Description,
+    Heading,
+    HeadingSection,
+    HeadingWrapper,
+    Section,
+    Task,
+    TaskButtons,
+    TaskCheck,
+    TaskText,
+    ToDoBox,
+    ToDoInput,
+    ToDos,
+    ToDoSubmitBox
+} from "./ToDo.elements";
+import {useDispatch, useSelector} from "react-redux";
+import {AiOutlineDelete} from 'react-icons/ai';
+import {addToDo, getToDo, removeToDo, updateToDo} from "../../features/todo/toDoSlice";
 
 const ToDo = () => {
     const [todo, setToDo] = useState("");
@@ -16,29 +27,21 @@ const ToDo = () => {
     const today = new Date();
     const date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear();
 
-    // Load all todos
-
     useEffect(() => {
         dispatch(getToDo());
-    });
+    }, [dispatch]);
 
-    // Update todo
-
-    const handleCompleteClick = (todo) => {
-        const updateToDo = {
-            Id: todo.id,
-            Name: todo.name,
-            IsCompleted: !todo.isCompleted
+    const handleUpdate = (todo) => {
+        const newToDo = {
+            id: todo.id,
+            isCompleted: !todo.isCompleted
         };
-        instance.put(`/task/${todo.id}`, updateToDo)
-        window. location. reload()
+        dispatch(updateToDo(newToDo))
     }
 
     const handleDelete = (todo) => {
         console.log(todo);
-        instance.delete(`/task/${todo.id}`)
-            .then(response => console.log(response));
-        window. location. reload()
+        dispatch(removeToDo(todo));
     }
 
     const handleSubmit = (input) => {
@@ -66,7 +69,7 @@ const ToDo = () => {
                                 <Task key={todo.id}>
                                     <TaskText style={todo.isCompleted ? {textDecoration: 'line-through'} : {textDecoration: 'none'}}>{todo.name}</TaskText>
                                     <TaskButtons>
-                                        <TaskCheck type="checkbox" defaultChecked={todo.isCompleted} onClick={() => handleCompleteClick(todo)}/>
+                                        <TaskCheck type="checkbox" defaultChecked={todo.isCompleted} onClick={() => handleUpdate(todo)}/>
                                         <AiOutlineDelete style={{marginBottom: "3px", cursor: "pointer"}} onClick={() => handleDelete(todo)} />
                                     </TaskButtons>
                                 </Task>
