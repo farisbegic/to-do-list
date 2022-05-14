@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hup/E1l1e+dnHVkKI92S3vewdCNj5WgEwuD9OeKgmUNV1EC3kTImvDr43/ax1SkKRPL+yDL5JUcAVo4ZXm0fDA==",
+  "dgSpecHash": "+BKsOsK34iZsg0BmLRfni2Oeh5D5571PnTdroWLViBrV2tiku4mixxU4qgJbKjmM3AwibEoRJr1rET8tlrFzLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fabeg\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\fabeg\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

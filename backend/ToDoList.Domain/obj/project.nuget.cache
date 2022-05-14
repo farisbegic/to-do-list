@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f67h2UWrnIrpnvOc/EowtCoa9RQECpHP26pTt9wD7j31Es0daJrXi2k7YJDAVhwe0vz6hsZu+uZ3bsVCudSBNg==",
+  "dgSpecHash": "/VEqaxmJIvMerG9KxziyK960Nct7WheZjEy4g8mRPDQnrohuS1lsINE9tLZhC214TsGBUFuF70T1stYZc08Lrw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Domain\\ToDoList.Domain.csproj",
+  "projectFilePath": "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.Domain\\ToDoList.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

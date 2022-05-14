@@ -6003,11 +6003,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.WebAPI\\ToDoList.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.WebAPI\\ToDoList.WebAPI.csproj",
       "projectName": "ToDoList.WebAPI",
-      "projectPath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.WebAPI\\ToDoList.WebAPI.csproj",
+      "projectPath": "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.WebAPI\\ToDoList.WebAPI.csproj",
       "packagesPath": "C:\\Users\\fabeg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fabeg\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6024,11 +6024,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Application\\ToDoList.Application.csproj": {
-              "projectPath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Application\\ToDoList.Application.csproj"
+            "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.Application\\ToDoList.Application.csproj": {
+              "projectPath": "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.Application\\ToDoList.Application.csproj"
             },
-            "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\fabeg\\Desktop\\to-do-list\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj"
+            "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\fabeg\\WebstormProjects\\to-do-list\\backend\\ToDoList.Infrastructure\\ToDoList.Infrastructure.csproj"
             }
           }
         }
