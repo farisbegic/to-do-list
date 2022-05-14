@@ -60,12 +60,12 @@ const ToDo = () => {
                     <HeadingWrapper>
                         <HeadingSection>
                             <Heading>TO DO</Heading>
-                            <Description>Things that need to be done at {date}</Description>
+                            <Description>Things that need to be done on {date}</Description>
                         </HeadingSection>
                     </HeadingWrapper>
                     <ToDos>
                         {
-                            todos ? (todos.map((todo) => (
+                            todos.length !== 0 ? (todos.map((todo) => (
                                 <Task key={todo.id}>
                                     <TaskText style={todo.isCompleted ? {textDecoration: 'line-through'} : {textDecoration: 'none'}}>{todo.name}</TaskText>
                                     <TaskButtons>
@@ -73,7 +73,8 @@ const ToDo = () => {
                                         <AiOutlineDelete style={{marginBottom: "3px", cursor: "pointer"}} onClick={() => handleDelete(todo)} />
                                     </TaskButtons>
                                 </Task>
-                            ))) : ""
+                            ))) :
+                                (<TaskText>No tasks for today.</TaskText>)
                         }
                     </ToDos>
                     <ToDoSubmitBox onSubmit={handleSubmit}>

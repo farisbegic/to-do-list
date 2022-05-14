@@ -57,6 +57,7 @@ export const ToDos = styled.div`
     align-items: center;
     flex-direction: column;
     margin: 20px 0;
+    padding: 20px 0;
     max-height: 400px;
     overflow: auto;
 `;

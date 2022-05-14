@@ -24,12 +24,6 @@ export const updateToDo = createAsyncThunk("todo/updateToDo", async (todo) => {
 export const toDoSlice = createSlice({
     name: "todo",
     initialState,
-    reducers: {
-        toggleComplete: (state, action) => {
-            const index = state[0].findIndex((todo) => todo.id === action.payload.id);
-            state[0][index].completed = action.payload.completed;
-        }
-    },
     extraReducers: (builder) => {
         builder.addCase(getToDo.fulfilled, (state, { payload }) => {
             state.todos = payload.data;
